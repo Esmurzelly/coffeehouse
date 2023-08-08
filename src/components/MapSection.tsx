@@ -1,12 +1,10 @@
-import React from 'react'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
-type Props = {}
 
-const MapSection = (props: Props) => {
+const MapSection = () => {
   return (
     <section className='w-full text-center py-10 px-10 flex flex-col justify-center items-center border-b-2 border-b-gray-300'>
-      <h1 className='text-base font-semibold'>We are on the map</h1>
+      <h1 className='text-base font-semibold lg:text-2xl'>We are on the map</h1>
 
       <div className='z-20 mt-7 w-5/6'>
         <YMaps>

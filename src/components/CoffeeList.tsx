@@ -1,8 +1,6 @@
 import { ICoffeeSorts, SelectedPage } from '@/types'
-import React from 'react'
 import { motion } from 'framer-motion'
 import temp_image from '@/assets/temp/cappucino.png'
-
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void

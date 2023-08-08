@@ -1,5 +1,5 @@
 import { SelectedPage } from '@/types';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMediaQuery from '@/hook/useMediaQuery';
 import girl from '@/assets/temp/girl.svg'

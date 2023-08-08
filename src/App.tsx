@@ -12,15 +12,12 @@ import MapSection from "./components/MapSection"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.AboutUs);
-  const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
     const handleScroll = () => {
       if(window.scrollY === 0) {
-        setIsTopOfPage(true);
         setSelectedPage(SelectedPage.AboutUs);
       }
-      if(window.scrollY !== 0) setIsTopOfPage(false);
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -33,7 +30,6 @@ function App() {
         <NavBar
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
-          isTopOfPage={isTopOfPage}
         />
         <MainInfo setSelectedPage={setSelectedPage} />
         <CoffeeList setSelectedPage={setSelectedPage} />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import logo from '@/assets/logo.svg';
 import phone from '@/assets/phone.svg';
@@ -13,10 +13,9 @@ import vk from '@/assets/social/vk.svg'
 type Props = {
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
-    isTopOfPage: boolean;
 }
 
-const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
+const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width: 1024px)");
 

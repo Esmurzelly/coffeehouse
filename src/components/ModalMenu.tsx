@@ -1,12 +1,12 @@
-import React from 'react'
-import { XMarkIcon } from '@heroicons/react/24/solid';
+// import React from 'react'
+// import { XMarkIcon } from '@heroicons/react/24/solid';
 
-type Props = {}
+// type Props = {}
 
-const ModalMenu = (props: Props) => {
-  return (
-    <div>ModalMenu</div>
-  )
-}
+// const ModalMenu = (props: Props) => {
+//   return (
+//     <div>ModalMenu</div>
+//   )
+// }
 
-export default ModalMenu
+// export default ModalMenu

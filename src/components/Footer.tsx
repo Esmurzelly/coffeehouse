@@ -1,15 +1,12 @@
-import React from 'react'
 import logo from '@/assets/logo.svg';
 import phone from '@/assets/phone.svg';
 import licence from '@/assets/licence.svg';
 
-import youtube from '@/assets/social/youtube.svg'
-import telegram from '@/assets/social/telegram.svg'
-import vk from '@/assets/social/vk.svg'
+import youtube from '@/assets/social/youtube.svg';
+import telegram from '@/assets/social/telegram.svg';
+import vk from '@/assets/social/vk.svg';
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className='mt-14 flex flex-row justify-between lg:justify-center text-secondary w-full text-[10px] px-[10px] pb-7'>
       <div className='w-full lg:w-5/6 flex justify-between'>
