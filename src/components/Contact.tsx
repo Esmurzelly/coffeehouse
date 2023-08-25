@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import useMediaQuery from '@/hook/useMediaQuery';
 import girl from '@/assets/temp/girl.svg'
 
+import GirlModel from './GirlModel';
+
 type Props = {
   setSelectedPage: (value: SelectedPage) => void
 }
@@ -75,6 +77,9 @@ const Contact = ({ setSelectedPage }: Props) => {
                   To get a job with us or leave a review as a visitor, use the contact form.
                 </p>
                 <img className='w-3/5 2xl:w-full' src={girl} alt="girl" />
+                
+                
+                {/* <GirlModel /> */}
               </div>
             </div>
 

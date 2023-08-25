@@ -18,11 +18,11 @@ type Props = {
 const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width: 1024px)");
-
+    
     return (
         <nav>
             <div className='py-2.5 bg-white fixed mx-auto w-full border-b-2 border-b-gray-300 z-50'>
-                
+
                 {isAboveMediumScreens ? (
                     <div className='flex items-center justify-between px-4 py-2 fixed top-0 w-full bg-white'>
                         <div className='flex items-center justify-between w-full'>
@@ -79,17 +79,23 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
                             )}
                         </button>
                     </div>
-
                 )}
-
 
                 {!isAboveMediumScreens && isMenuToggled && (
                     <div className='fixed right-0 top-14 pt-20 bottom-0 z-40 h-full w-full bg-white'>
                         <div className='mx-auto w-5/6'>
                             <div className='flex flex-col text-center gap-10'>
-                                <Link page='About Us' selectedpage={selectedPage} setSelectedpage={setSelectedPage} />
-                                <Link page='Menu' selectedpage={selectedPage} setSelectedpage={setSelectedPage} />
-                                <Link page='Contact' selectedpage={selectedPage} setSelectedpage={setSelectedPage} />
+                                <div onClick={() => setIsMenuToggled(false)} className='w-full'>
+                                    <Link page='About Us' selectedpage={selectedPage} setSelectedpage={setSelectedPage} />
+                                </div>
+
+                                <div onClick={() => setIsMenuToggled(false)} className='w-full'>
+                                    <Link page='Menu' selectedpage={selectedPage} setSelectedpage={setSelectedPage} />
+                                </div>
+
+                                <div onClick={() => setIsMenuToggled(false)} className='w-full'>
+                                    <Link page='Contact' selectedpage={selectedPage} setSelectedpage={setSelectedPage} />
+                                </div>
                             </div>
 
                             <div className='flex flex-row justify-center mt-7 gap-4'>
