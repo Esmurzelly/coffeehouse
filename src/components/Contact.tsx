@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import useMediaQuery from '@/hook/useMediaQuery';
 import girl from '@/assets/temp/girl.svg'
 
-import GirlModel from './GirlModel';
-
 type Props = {
   setSelectedPage: (value: SelectedPage) => void
 }

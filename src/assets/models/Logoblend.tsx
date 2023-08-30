@@ -4,9 +4,7 @@ Command: npx gltfjsx@6.2.10 logoblend.glb -t
 */
 
 import * as THREE from 'three'
-import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { GLTF } from 'three-stdlib'
 
 type GLTFResult = any & {
   nodes: {

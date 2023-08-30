@@ -1,12 +1,9 @@
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 import { Suspense } from 'react';
 
 import { Model } from '@/assets/models/Girl'
 
-type Props = {}
-
-const GirlModel = (props: Props) => {
+const GirlModel = () => {
   return (
     <Canvas camera={{position: [1, 3, 10], zoom: 3}}>
         <hemisphereLight intensity={1} />
